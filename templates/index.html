@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Impact Predictor</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">🌍 ClimatePredict</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="container">
+        <h1>Global Climate Change Impact Predictor</h1>
+        <form id="prediction-form">
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" name="temperature" step="any" required>
+
+            <label for="co2">CO2 Emissions:</label>
+            <input type="number" id="co2" name="co2" step="any" required>
+
+            <label for="sea_level">Sea Level Rise:</label>
+            <input type="number" id="sea_level" name="sea_level" step="any" required>
+
+            <label for="precipitation">Precipitation:</label>
+            <input type="number" id="precipitation" name="precipitation" step="any" required>
+
+            <label for="humidity">Humidity:</label>
+            <input type="number" id="humidity" name="humidity" step="any" required>
+
+            <label for="wind_speed">Wind Speed:</label>
+            <input type="number" id="wind_speed" name="wind_speed" step="any" required>
+
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About This Project</h2>
+        <p>This application predicts climate change impact based on various environmental factors.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ClimatePredict. All rights reserved.</p>
+    </footer>
+
+    <script src="static/script.js"></script>
+</body>
+</html>
